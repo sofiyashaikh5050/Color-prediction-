@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Trading Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .color-card {
+            display: inline-block;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .color-box {
+            width: 100px;
+            height: 100px;
+            margin: 10px auto;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Color Trading Platform</h1>
+    </header>
+    <div class="container">
+        <div class="color-card">
+            <div class="color-box" style="background-color: red;"></div>
+            <p>Red</p>
+            <button onclick="buyColor('Red')">Buy</button>
+        </div>
+        <div class="color-card">
+            <div class="color-box" style="background-color: blue;"></div>
+            <p>Blue</p>
+            <button onclick="buyColor('Blue')">Buy</button>
+        </div>
+        <div class="color-card">
+            <div class="color-box" style="background-color: green;"></div>
+            <p>Green</p>
+            <button onclick="buyColor('Green')">Buy</button>
+        </div>
+    </div>
+
+    <script>
+        function buyColor(color) {
+            alert(`You have bought the color: ${color}`);
+        }
+    </script>
+</body>
+</html>
